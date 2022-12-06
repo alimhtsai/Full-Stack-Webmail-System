@@ -1,0 +1,75 @@
+/* Container that the entire UI is in. */
+.appContainer {
+  display : grid;
+  grid-template-columns : 200px 1fr 200px;
+  grid-template-rows : 65px 1fr;
+  width : 100vw;
+  height : 100vh;
+}
+
+/* The toolbar up top. */
+.toolbar {
+  grid-column : 1 / 4;
+  grid-row : 1 / 1;
+  /* background-color: #ddbea9; */
+  border-bottom : 1px solid #e0e0e0;
+  padding-top : 8px;
+  padding-left : 4px;
+  background-image: url("img/header3.jpg");
+}
+
+/* List of mailboxes on the left. */
+.mailboxList {
+  grid-column : 1 / 1;
+  grid-row : 2 / 2;
+  /* background-color: #b7b7a4; */
+  border-right : 1px solid #e0e0e0;
+  padding-top : 6px;
+  padding-left : 4px;
+  overflow : auto;
+}
+
+/* The center area (includes message list and message/contact views). */
+.centerArea {
+  display : grid;
+  /* background-color: #f4f3ee; */
+  background-image: url("img/mail2.jpg");
+  background-color: transparent;
+  /* grid-template-rows : 200px 1fr; */
+  grid-template-columns : 1fr 1fr;
+}
+
+/* The message list at the top of the center area. */
+.messageList {
+  border-right : 3px dashed #e0e0e0;
+  grid-row : 1 / 4;
+  background-color: rgb(255, 255, 255, 80%);
+  /* grid-column : 1 / 4; */
+  overflow : auto;
+}
+
+/* The container for the message and contact views below the message list. */
+.centerViews {
+  grid-row : 1 / 4;
+  padding-top : 4px;
+  padding-left : 4px;
+  padding-right : 4px;
+  overflow : auto;
+  background-color: rgb(255, 255, 255, 80%);
+}
+
+/* The contact list on the right. */
+.contactList {
+  grid-column : 3 / 3;
+  grid-row : 2 / 2;
+  /* background-color: #b7b7a4; */
+  border-left : 1px solid #e0e0e0;
+  padding-top : 4px;
+  padding-left : 4px;
+  overflow : auto;
+}
+
+/* Style to override default gray disabled color of the message ID and date fields in the message view. */
+.messageInfoField {
+  color : #000000!important;
+}
