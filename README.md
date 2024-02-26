@@ -1,4 +1,4 @@
-## Full Stack Webmail System
+## Webmail System
 > JavaScript, TypeScript, NodeJS, REST, Express.js, NeDB; React.js, Axios, Webpack, Babel
 
 **Introduction**
